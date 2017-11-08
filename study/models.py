@@ -16,3 +16,4 @@ class Teacher(models.Model):
 	email			=	models.EmailField()
 	blood_group		=	models.CharField(max_length=20)
 	photo			=	models.ImageField()
+	
