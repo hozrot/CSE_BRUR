@@ -1,4 +1,11 @@
-from django.http import HttpResponse 
+from django.http import HttpResponse
+from django.shortcuts import render 
 
 def index(request):
-	return HttpResponse("<h1> Home Page </br>  Welcome to All</h1>")
+	return render(request,'base.html')
+
+def log_in(request):
+	return render(request,'log_in.html')
+	
+def sign_in(request):
+	return render(request,'sign_in.html')

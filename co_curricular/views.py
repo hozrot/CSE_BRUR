@@ -1,4 +1,5 @@
 from django.http import HttpResponse 
+from django.shortcuts import render
 
 def index(request):
-	return HttpResponse("<h1>Co- Curricular Page here </h1>")
+		return render(request,'co_curricular/index.html')
