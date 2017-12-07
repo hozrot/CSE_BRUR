@@ -62,7 +62,7 @@ class Teacher(models.Model):
 					        max_length=20,
 					        choices=blood_group_choice,
 					        default=blood_group,)
-	photo			=	models.ImageField()
+	photo			=	models.ImageField(upload_to="CSE_BRUR/static/images/study/teacher")
 	
 class Student(models.Model):
 	Apositive ='A+'
@@ -101,6 +101,6 @@ class Student(models.Model):
 					        max_length=20,
 					        choices=blood_group_choice,
 					        default=Apositive,)
-	photo			=	models.ImageField()
+	photo			=	models.ImageField(upload_to="CSE_BRUR/static/images/study/student")
 	
 	

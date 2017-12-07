@@ -126,9 +126,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = 'CSE_BRUR/static/images/'
 
 STATICFILES_DIRS = (
         os.path.join(BASE_DIR ,"CSE_BRUR" ,"static"),
+        os.path.join(BASE_DIR ,"CSE_BRUR" ,"static", "images"),
     )
 
 
